@@ -4,6 +4,9 @@
     ViewData["Title"] = "Guest Details";
 }
 
+<!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 <h2 class="text-center mt-3">Guest Details</h2>
 
 <div class="container">
@@ -19,7 +22,7 @@
                     <input name="NewGuest.Name" class="form-control input-custom" required />
                 </div>
                 <div class="col-md-4">
-                    <label>Email</label>
+                    <label><i class="bi bi-envelope-at text-white"></i>Email</label>
                     <input name="NewGuest.Email" class="form-control input-custom" required />
                 </div>
                 <div class="col-md-4">
@@ -90,7 +93,7 @@
 
     <!-- Guests Table -->
     <div class="card shadow-lg p-4">
-        <h4 class="text-center">Added Guests</h4>
+        <h4 class="text-center text-white">Added Guests</h4>
         <table class="table table-bordered table-hover text-center">
             <thead class="table-custom-header">
                 <tr>
@@ -104,7 +107,7 @@
                     <th>Nationality</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody style="background-color: #48A6A7">
                 @if (Model != null && Model.Count > 0)
                 {
                     for (var i = 0; i < Model.Count; i++)
@@ -126,7 +129,7 @@
                 }
                 else
                 {
-                    <tr><td colspan="8">No guests added yet.</td></tr>
+                    <tr><td colspan="8" style="background-color: #48A6A7">No guests added yet.</td></tr>
                 }
             </tbody>
         </table>
@@ -153,10 +156,123 @@
                         asp-route-bookingId="@ViewBag.BookingId"
                         asp-route-flightId="@ViewBag.FlightId"
                         asp-route-seatType="@ViewBag.SeatType"
-                        class="btn btn-primary btn-custom">
+                        class="btn btn-custom">
                     Confirm Booking
                 </button>
             </form>
         </div>
     </div>
 </div>
+
+<style>
+    /* Base styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #F2EFE7, #A7D0D5, #4FA5A5); /* Updated theme */
+    }
+
+    h2 {
+        color: #3674B5;
+    }
+
+    /* Container and Card Styling */
+    .container {
+        padding: 20px;
+    }
+
+    .card {
+        background-color: #A7D0D5;
+        border: 1px solid #A1E3F9;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Input Fields */
+    .input-custom {
+        border: 1px solid #578FCA;
+        border-radius: 8px;
+        padding: 10px;
+        transition: border-color 0.3s ease;
+    }
+
+        .input-custom:focus {
+            border-color: #3674B5;
+            outline: none;
+        }
+
+    /* Buttons */
+    .btn-custom {
+        background: #2973B2;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-custom:hover {
+            background-color: #3674B5;
+        }
+
+    .btn-primary.btn-custom {
+        background-color: #A1E3F9;
+        color: #3674B5;
+    }
+
+        .btn-primary.btn-custom:hover {
+            background-color: #578FCA;
+            color: #fff;
+        }
+
+    /* Table Styling */
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        .table th, .table td {
+            border: 1px solid #A1E3F9;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table th {
+            background-color: #578FCA;
+            color: #fff;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #D1F8EF;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #A1E3F9;
+        }
+
+    /* Headings and Text */
+    .table-custom-header th {
+        background-color: #3674B5;
+        color: #fff;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .mt-3 {
+        margin-top: 1rem;
+    }
+
+    .mt-4 {
+        margin-top: 1.5rem;
+    }
+
+    .mt-5 {
+        margin-top: 3rem;
+    }
+
+    /* Divider */
+    hr {
+        border-top: 2px solid #A1E3F9;
+    }
+</style>

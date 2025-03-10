@@ -44,7 +44,7 @@ namespace AirBookingApplication.Controllers
                 if (success)
                 {
                     TempData["SuccessMessage"] = "User registered successfully!";
-                    return RedirectToAction("Login");
+                    return RedirectToAction("Login", new { preserveMethod = true });
                 }
                 else
                 {

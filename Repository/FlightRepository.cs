@@ -92,20 +92,17 @@ namespace Repository
 
                 if (response.IsSuccessStatusCode)
                 {
-                    try
+                    var messageResponse = await response.Content.ReadFromJsonAsync<Dictionary<string, object>>();
+                    if (messageResponse != null && messageResponse.ContainsKey("message"))
                     {
-                        var flight = await response.Content.ReadFromJsonAsync<Flights>();
+                        return (null, messageResponse["message"].ToString()); // Return the message if present
+                    }
+                    else
+                    {
+                        var flight = JsonSerializer.Deserialize<Flights>(responseBody);
                         if (flight != null)
                         {
                             return (flight, null); // Flight found, no error message
-                        }
-                    }
-                    catch
-                    {
-                        var messageResponse = await response.Content.ReadFromJsonAsync<Dictionary<string, string>>();
-                        if (messageResponse != null && messageResponse.ContainsKey("message"))
-                        {
-                            return (null, messageResponse["message"]); // Return message if no flight found
                         }
                     }
                 }

@@ -10,7 +10,14 @@
             <h3 class="mb-0 title">Flight Details</h3>
         </div>
         <div class="card-body">
-            <div class="row">
+            @if (string.IsNullOrEmpty(Model.Source) || string.IsNullOrEmpty(Model.Destination))
+            {
+                <div class="alert alert-warning text-center">
+                    <strong>@ViewBag.Message</strong>
+                </div>
+            }
+            else{
+                <div class="row">
                 <!-- Flight Image -->
                 <div class="col-md-4 text-center">
                     <img src="@Url.Content($"~/images/flight-{Model.FlightImageId}.jpg")" alt="Flight Image" class="flight-image">
@@ -47,6 +54,7 @@
                     </table>
                 </div>
             </div>
+            }
         </div>
 
         <!-- Action Buttons -->

@@ -88,12 +88,19 @@ namespace AirBookingApplication.Controllers
         {
             (Flights? flight, string? message) = await _flightRepository.FlightDetails(id, seatType); // Ensure correct return type
 
+            if (!string.IsNullOrEmpty(message))
+            {
+                ViewBag.Message = message;
+                return View("NoSeatAvailable"); // Show custom view if message is present
+            }
+
             if (flight == null)
             {
                 ViewBag.Message = message ?? "The requested seat type is not available for this flight.";
                 return View("NoSeatAvailable"); // Show custom view
             }
 
+            ViewBag.Message = message ?? "The requested seat type is not available for this flight.";
             ViewBag.FlightId = id;
             ViewBag.SeatType = seatType;
             Random random = new Random();
