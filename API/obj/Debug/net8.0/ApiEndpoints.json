@@ -1,0 +1,180 @@
+[
+  {
+    "ContainingType": "AirBookingApplication.Controllers.Api.AccountApiController",
+    "Method": "Login",
+    "RelativePath": "Api/AccountApi/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirBookingApplication.Controllers.Api.AccountApiController",
+    "Method": "Register",
+    "RelativePath": "Api/AccountApi/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.BookingApi.BookingApiController",
+    "Method": "CreateBooking",
+    "RelativePath": "Api/BookingApi/CreateBooking",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "flightId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "seatType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.FlightApi.FlightApiController",
+    "Method": "FlightDetails",
+    "RelativePath": "Api/FlightApi/Details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "flightId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "seatType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.FlightApi.FlightApiController",
+    "Method": "GetAvailableSeats",
+    "RelativePath": "Api/FlightApi/GetAvailableSeats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "flightId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "seatType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.FlightApi.FlightApiController",
+    "Method": "SearchFlight",
+    "RelativePath": "Api/FlightApi/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "source",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "destination",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "departureDate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.GuestApi.GuestApiController",
+    "Method": "AddGuest",
+    "RelativePath": "Api/GuestApi/AddGuest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "guest",
+        "Type": "DTO.GuestDetailsDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookingId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "seatType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.GuestApi.GuestApiController",
+    "Method": "GetGuestsByBookingId",
+    "RelativePath": "Api/GuestApi/GetGuests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
