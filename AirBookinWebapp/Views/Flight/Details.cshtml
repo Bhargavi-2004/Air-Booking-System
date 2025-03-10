@@ -1,0 +1,174 @@
+﻿@model Models.Flights
+
+@{
+    ViewData["Title"] = "Flight Details";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg rounded custom-card">
+        <div class="card-header text-center">
+            <h3 class="mb-0 title">Flight Details</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <!-- Flight Image -->
+                <div class="col-md-4 text-center">
+                    <img src="@Url.Content($"~/images/flight-{Model.FlightImageId}.jpg")" alt="Flight Image" class="flight-image">
+                </div>
+                <input type="hidden" name="flightId" value="@ViewBag.FlightId" />
+                <input type="hidden" name="seatType" value="@ViewBag.SeatType" />
+                <input type="hidden" name="bookingId" value="@ViewBag.BookingId" />
+
+                <!-- Flight Details -->
+                <div class="col-md-8">
+                    <table class="custom-table">
+                        <tbody>
+                            <tr>
+                                <th>Flight Name</th>
+                                <td>@Model.FlightName</td>
+                            </tr>
+                            <tr>
+                                <th>Source</th>
+                                <td>@Model.Source</td>
+                            </tr>
+                            <tr>
+                                <th>Destination</th>
+                                <td>@Model.Destination</td>
+                            </tr>
+                            <tr>
+                                <th>Departure Date</th>
+                                <td>@Model.DepartureDate.ToString("MM/dd/yyyy")</td>
+                            </tr>
+                            <tr>
+                                <th>Price</th>
+                                <td>₹@Model.Price</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="card-footer text-center">
+            <a href="javascript:history.back()" class="custom-btn back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Flights
+            </a>
+            <a asp-controller="Booking" asp-action="GuestDetails"
+               asp-route-flightId="@Model.FlightId"
+               asp-route-seatType="@ViewBag.SeatType"
+               asp-route-bookingId="@ViewBag.BookingId"
+            class="custom-btn book-btn">
+                <i class="fas fa-plane"></i> Book Now
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- FontAwesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    /* Apply Background */
+    body {
+        background: linear-gradient(to bottom right, #F2EFE7, #9ACBD0);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Card Styling */
+    .custom-card {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background: white;
+    }
+
+    .card-header {
+        background: #2973B2;
+        color: white;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    .title {
+        font-size: 26px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* Flight Image Styling */
+    .flight-image {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Custom Table */
+    /* Custom Table */
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .custom-table th, .custom-table td {
+            padding: 14px 18px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .custom-table th {
+            background: linear-gradient(135deg, #2973B2, #48A6A7);
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .custom-table td {
+            background: #F9F9F9;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Alternate row colors */
+        .custom-table tbody tr:nth-child(even) td {
+            background: #E3F2FD;
+        }
+
+        /* Hover Effect */
+        .custom-table tbody tr:hover td {
+            background: #D0EBFF;
+            transition: 0.3s ease-in-out;
+        }
+
+    /* Button Styling */
+    .custom-btn {
+        display: inline-block;
+        padding: 10px 18px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .back-btn {
+        background: #48A6A7;
+        color: white;
+        margin-right: 10px;
+    }
+
+    .book-btn {
+        background: #2973B2;
+        color: white;
+    }
+
+    .custom-btn:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+</style>

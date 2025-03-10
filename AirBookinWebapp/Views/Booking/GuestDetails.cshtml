@@ -1,0 +1,162 @@
+﻿@model List<DTO.GuestDetailsDTO>
+
+@{
+    ViewData["Title"] = "Guest Details";
+}
+
+<h2 class="text-center mt-3">Guest Details</h2>
+
+<div class="container">
+    <div class="card shadow-lg p-4">
+        <!-- Guest Entry Form -->
+        <form asp-action="AddGuest" method="get">
+            <input type="hidden" name="flightId" value="@ViewBag.FlightId" />
+            <input type="hidden" name="seatType" value="@ViewBag.SeatType" />
+            <input type="hidden" name="bookingId" value="@ViewBag.BookingId" />
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <label>Full Name</label>
+                    <input name="NewGuest.Name" class="form-control input-custom" required />
+                </div>
+                <div class="col-md-4">
+                    <label>Email</label>
+                    <input name="NewGuest.Email" class="form-control input-custom" required />
+                </div>
+                <div class="col-md-4">
+                    <label>Passenger Type</label>
+                    <select name="NewGuest.PassengerType" class="form-control input-custom" required>
+                        <option value="">Select</option>
+                        <option value="Adult">Adult</option>
+                        <option value="Child">Child</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label>Age</label>
+                    <input name="NewGuest.Age" class="form-control input-custom" type="number" min="1" />
+                </div>
+                <div class="col-md-4">
+                    <label>Phone Number</label>
+                    <input name="NewGuest.PhoneNumber" class="form-control input-custom" required />
+                </div>
+                <div class="col-md-4">
+                    <label>Gender</label>
+                    <select name="NewGuest.Gender" class="form-control input-custom" required>
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label>Birth Date</label>
+                    <input name="NewGuest.BirthDate" class="form-control input-custom" type="date" />
+                </div>
+                <div class="col-md-4">
+                    <label>City</label>
+                    <input name="NewGuest.City" class="form-control input-custom" required />
+                </div>
+                <div class="col-md-4">
+                    <label>Region</label>
+                    <input name="NewGuest.Region" class="form-control input-custom" />
+                </div>
+                <div class="col-md-4">
+                    <label>Postal Code</label>
+                    <input name="NewGuest.PostalCode" class="form-control input-custom" required />
+                </div>
+                <div class="col-md-4">
+                    <label>Passport Number</label>
+                    <input name="NewGuest.PassportNumber" class="form-control input-custom" />
+                </div>
+                <div class="col-md-4">
+                    <label>Nationality</label>
+                    <select name="NewGuest.Nationality" class="form-control input-custom" required>
+                        <option value="">Select</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mt-4 text-center">
+                <button type="submit" class="btn btn-secondary btn-custom" asp-controller="Guest" asp-action="AddGuest">Add Customer</button>
+            </div>
+        </form>
+    </div>
+
+    <hr class="my-4" />
+
+    <!-- Guests Table -->
+    <div class="card shadow-lg p-4">
+        <h4 class="text-center">Added Guests</h4>
+        <table class="table table-bordered table-hover text-center">
+            <thead class="table-custom-header">
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Passenger Type</th>
+                    <th>Age</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                    <th>Nationality</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Count > 0)
+                {
+                    for (var i = 0; i < Model.Count; i++)
+                    {
+                        <tr>
+                            <td>
+                                <input type="hidden" name="Guests[@i].Name" value="@Model[i].Name" />
+                                @Model[i].Name
+                            </td>
+                            <td><input type="hidden" name="Guests[@i].Email" value="@Model[i].Email" /> @Model[i].Email</td>
+                            <td><input type="hidden" name="Guests[@i].PassengerType" value="@Model[i].PassengerType" /> @Model[i].PassengerType</td>
+                            <td><input type="hidden" name="Guests[@i].Age" value="@Model[i].Age" /> @Model[i].Age</td>
+                            <td><input type="hidden" name="Guests[@i].PhoneNumber" value="@Model[i].PhoneNumber" /> @Model[i].PhoneNumber</td>
+                            <td><input type="hidden" name="Guests[@i].Gender" value="@Model[i].Gender" /> @Model[i].Gender</td>
+                            <td><input type="hidden" name="Guests[@i].City" value="@Model[i].City" /> @Model[i].City</td>
+                            <td><input type="hidden" name="Guests[@i].Nationality" value="@Model[i].Nationality" /> @Model[i].Nationality</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr><td colspan="8">No guests added yet.</td></tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="text-center mt-3">
+            <form asp-action="SubmitGuestDetails" asp-controller="Guest" method="post">
+                @if (Model != null)
+                {
+                    @for (var i = 0; i < Model.Count; i++)
+                    {
+                        <input type="hidden" name="Guests[@i].Name" value="@Model[i].Name" />
+                        <input type="hidden" name="Guests[@i].Email" value="@Model[i].Email" />
+                        <input type="hidden" name="Guests[@i].PassengerType" value="@Model[i].PassengerType" />
+                        <input type="hidden" name="Guests[@i].Age" value="@Model[i].Age" />
+                        <input type="hidden" name="Guests[@i].PhoneNumber" value="@Model[i].PhoneNumber" />
+                        <input type="hidden" name="Guests[@i].Gender" value="@Model[i].Gender" />
+                        <input type="hidden" name="Guests[@i].City" value="@Model[i].City" />
+                        <input type="hidden" name="Guests[@i].Nationality" value="@Model[i].Nationality" />
+                    }
+                }
+                <button type="submit"
+                        asp-action="SubmitGuestDetails"
+                        asp-controller="Guest"
+                        asp-route-bookingId="@ViewBag.BookingId"
+                        asp-route-flightId="@ViewBag.FlightId"
+                        asp-route-seatType="@ViewBag.SeatType"
+                        class="btn btn-primary btn-custom">
+                    Confirm Booking
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

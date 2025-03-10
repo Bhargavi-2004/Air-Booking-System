@@ -1,0 +1,98 @@
+﻿@model DTO.FlightDTO;
+
+    <div class="glassmorphic-box mx-auto p-4 shadow-lg">
+        <h4 class="text-center text-dark fw-bold mb-4">Find Your Perfect Flight</h4>
+
+        @using (Html.BeginForm("SearchFlight", "Flight", FormMethod.Get, new { @class = "row g-3" }))
+        {
+            <div class="col-md-3">
+                <label class="form-label"><i class="fas fa-plane-departure"></i> Departure City</label>
+                @Html.TextBoxFor(m => m.Source, new { @class = "form-control custom-input", placeholder = "Enter city" })
+                @Html.ValidationMessageFor(m => m.Source, "", new { @class = "text-warning" })
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label"><i class="fas fa-plane-arrival"></i> Destination</label>
+                @Html.TextBoxFor(m => m.Destination, new { @class = "form-control custom-input", placeholder = "Enter destination" })
+                @Html.ValidationMessageFor(m => m.Destination, "", new { @class = "text-warning" })
+            </div>
+
+            <div class="col-md-2">
+                <label class="form-label"><i class="far fa-calendar-alt"></i> Departure Date</label>
+                @Html.TextBoxFor(m => m.DepartureDate, "{yyyy-MM-dd}", new { @class = "form-control custom-input", type = "date" })
+                @Html.ValidationMessageFor(m => m.DepartureDate, "", new { @class = "text-warning" })
+            </div>
+
+            @* <div class="col-md-2"> *@
+            @*     <label class="form-label"><i class="far fa-calendar-check"></i> Return Date</label> *@
+            @*     @Html.TextBoxFor(m => m.ArrivalDate, "{yyyy-MM-dd}", new { @class = "form-control custom-input", type = "date" }) *@
+            @*     @Html.ValidationMessageFor(m => m.ArrivalDate, "", new { @class = "text-warning" }) *@
+            @* </div> *@
+
+            <div class="col-md-2">
+                <label class="form-label"><i class="fas fa-users"></i> Travelers</label>
+                <input type="number" id="travellers" class="form-control custom-input" min="1" value="1">
+            </div>
+
+            <div class="text-center mt-4">
+                <button id="searchBtn" class="btn custom-btn">
+                    <i class="fas fa-search"></i> Search Flights
+                </button>
+            </div>
+        }
+    </div>
+
+<style>
+    /* Glassmorphism Container */
+    .glassmorphic-box {
+        background: rgba(154, 203, 208, 0.3); /* Light Aqua Blue */
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 20px;
+        max-width: 1200px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Custom Inputs */
+    .custom-input {
+        background: rgba(74, 156, 161, 0.3); /* Teal Blue */
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+        .custom-input:focus {
+            background: rgba(74, 156, 161, 0.5);
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+        }
+
+    /* Search Button */
+    .custom-btn {
+        background: linear-gradient(135deg, #1E6B96, #4A9CA1); /* Deep Blue */
+        color: white;
+        font-weight: bold;
+        padding: 12px 30px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        border: none;
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    }
+
+        .custom-btn:hover {
+            background: linear-gradient(135deg, #4A9CA1, #1E6B96);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
+        }
+
+    /* Icons */
+    .form-label i {
+        margin-right: 5px;
+        color: white;
+    }
+</style>
+
+<!-- FontAwesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

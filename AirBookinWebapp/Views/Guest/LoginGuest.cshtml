@@ -1,0 +1,146 @@
+﻿@model DTO.LoginDTO
+@{
+    ViewData["Title"] = "LoginGuest";
+}
+
+<div class="login-container">
+    <div class="login-box">
+        <h1>Login</h1>
+
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            @Html.Hidden("returnUrl", ViewBag.ReturnUrl as string)
+
+            @* Email *@
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email)
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Enter your email" })
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+
+            @* Password *@
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Enter your password" })
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+
+            @* Submit Button *@
+            <div class="form-group">
+                <button type="submit" class="btn-login">Login</button>
+            </div>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="@Url.Action("Register", "Account")">Register</a></p>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    /* Background */
+    body {
+        background: linear-gradient(to bottom, #9ACBD0, #F2EFE7);
+        font-family: 'Poppins', sans-serif;
+        height: 100vh;
+        margin: 0;
+    }
+
+    /* Login Container */
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(15px);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+        .login-box:hover {
+            transform: scale(1.02);
+            backdrop-filter: blur(8px); /* Reduce blur effect */
+        }
+
+    /* Title */
+    h1 {
+        color: #2973B2;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    /* Form Group */
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    label {
+        font-weight: 500;
+        color: #2973B2;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Input Fields */
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #48A6A7;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #2973B2;
+            box-shadow: 0 0 8px rgba(41, 115, 178, 0.3);
+        }
+
+    /* Button */
+    .btn-login {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(to right, #2973B2, #48A6A7);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+
+        .btn-login:hover {
+            background: linear-gradient(to right, #48A6A7, #2973B2);
+        }
+
+    /* Register Link */
+    .register-link {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+        .register-link a {
+            color: #2973B2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .register-link a:hover {
+                text-decoration: underline;
+            }
+
+</style>

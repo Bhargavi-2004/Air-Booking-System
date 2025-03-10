@@ -1,0 +1,130 @@
+﻿@model DTO.FlightDTO;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Flight Search Section (Partial View) -->
+<div class="container mt-4">
+    @await Html.PartialAsync("_FlightSearch", Model)
+</div>
+
+<!-- Additional Details Section -->
+<div class="container mt-5">
+     <div class="row mt-4"> 
+         <div class="col-md-4"> 
+             <div class="card p-3 shadow"> 
+                 <h4 class="text-primary">Easy Flight Booking</h4> 
+                 <p>Book flights quickly and easily with our simple search and booking system.</p> 
+             </div> 
+         </div> 
+
+         <div class="col-md-4"> 
+             <div class="card p-3 shadow"> 
+                 <h4 class="text-primary">Best Deals & Offers</h4> 
+                 <p>Get the best flight deals and discounts for your favorite destinations.</p> 
+             </div> 
+         </div> 
+
+         <div class="col-md-4"> 
+             <div class="card p-3 shadow"> 
+                 <h4 class="text-primary">24/7 Customer Support</h4> 
+                 <p>Our support team is available round the clock to assist you with your bookings.</p> 
+             </div> 
+         </div> 
+     </div> 
+</div>
+
+<style>
+    /* General Styles */
+    body {
+        background: linear-gradient(to right, #F2EFE7, #A7D0D5, #4FA5A5); /* Updated theme */
+        color: #2E77B8; /* Deep Blue for text */
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Flight Search Section (Partial View) */
+    .container {
+        max-width: 1200px;
+    }
+
+    /* Welcome Text */
+    h2.text-secondary {
+        color: #2E77B8 !important; /* Deep Blue */
+        font-weight: bold;
+    }
+
+    /* Cards for Features */
+    .card {
+        background: rgba(255, 255, 255, 0.1); /* Light Glassmorphism */
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+        text-align: center;
+        color: #2E77B8;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(46, 119, 184, 0.3); /* Deep Blue Shadow */
+        }
+
+        /* Card Headings */
+        .card h4 {
+            color: #4FA5A5; /* Teal Blue */
+            font-weight: bold;
+        }
+
+        /* Paragraph Styling */
+        .card p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+    /* Flight Search Form Styling */
+    .glassmorphic-box {
+        background: rgba(167, 208, 213, 0.3); /* Soft Blue */
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 20px;
+        max-width: 1200px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Custom Inputs */
+    .custom-input {
+        background: rgba(79, 165, 165, 0.3); /* Teal Blue */
+        border: none;
+        color: #2E77B8;
+        padding: 10px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+        .custom-input:focus {
+            background: rgba(79, 165, 165, 0.5);
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+        }
+
+    /* Search Button */
+    .custom-btn {
+        background: linear-gradient(135deg, #2E77B8, #4FA5A5); /* Deep Blue to Teal */
+        color: white;
+        font-weight: bold;
+        padding: 12px 30px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        border: none;
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    }
+
+        .custom-btn:hover {
+            background: linear-gradient(135deg, #4FA5A5, #2E77B8);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
+        }
+
+</style>

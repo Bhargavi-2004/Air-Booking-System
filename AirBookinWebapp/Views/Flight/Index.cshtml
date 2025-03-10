@@ -1,0 +1,43 @@
+﻿@model List<DTO.FlightDTO>
+
+<h2>Flight Search Results</h2>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+else{
+    @if (Model.Count == 0)
+    {
+        <p>No flights found.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Departure Date</th>
+                    <th>Arrival Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var flight in Model)
+                {
+                    <tr>
+                        <td>@flight.Source</td>
+                        <td>@flight.Destination</td>
+                        <td>@flight.DepartureDate.</td>
+                        <td>@flight.ArrivalDate</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}

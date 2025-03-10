@@ -1,0 +1,171 @@
+﻿@model DTO.BookingDTO
+
+@{
+    ViewData["Title"] = "SubmitGuestDetails";
+}
+
+<h2>Confirm Your Booking</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Flight ID</th>
+        <td>@Model.FlightId</td>
+    </tr>
+    <tr>
+        <th>Flight Name</th>
+        <td>@Model.FlightName</td>
+    </tr>
+    <tr>
+        <th>Source</th>
+        <td>@Model.Source</td>
+    </tr>
+    <tr>
+        <th>Destination</th>
+        <td>@Model.Destination</td>
+    </tr>
+    <tr>
+        <th>Departure Time</th>
+        <td>@Model.DepartureTime.ToString("f")</td>
+    </tr>
+    <tr>
+        <th>Seat Type</th>
+        <td>@Model.SeatType</td>
+    </tr>
+    <tr>
+        <th>Number of Passengers</th>
+        <td>@Model.NumberOfPassengers</td>
+    </tr>
+    <tr>
+        <th>Total Price</th>
+        <td>$@Model.TotalPrice</td>
+    </tr>
+</table>
+
+<h3>Guest Details</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var guest in Model.Guests)
+        {
+            <tr>
+                <td>@guest.Name</td>
+                <td>@guest.Age</td>
+                <td>@guest.Gender</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@using (Html.BeginForm("Payment", "Booking", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.BookingId)  <!-- Added BookingId -->
+    @Html.HiddenFor(model => model.FlightId)
+    @Html.HiddenFor(model => model.SeatType)
+    @Html.HiddenFor(model => model.NumberOfPassengers)
+    @Html.HiddenFor(model => model.TotalPrice)
+
+    <button type="submit"
+            class="btn btn-primary">Proceed to Payment</button>
+}
+
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #D1F8EF; /* Lightest Blue */
+        color: #3674B5; /* Dark Blue */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Heading Styles */
+    h2, h3 {
+        color: #3674B5;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    /* Table Styles */
+    .table {
+        width: 80%;
+        margin: 20px auto;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Table Header */
+    .table-bordered th {
+        background-color: #578FCA; /* Medium Blue */
+        color: white;
+        padding: 12px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    /* Table Cells */
+    .table-bordered td {
+        padding: 12px;
+        border: 1px solid #A1E3F9; /* Light Blue */
+        font-size: 16px;
+    }
+
+    /* Guest Table Styling */
+    .table-striped tbody tr:nth-child(odd) {
+        background-color: #A1E3F9; /* Lightest shade */
+    }
+
+    .table-striped tbody tr:nth-child(even) {
+        background-color: white;
+    }
+
+    /* Button Styles */
+    .btn-primary {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        background-color: #3674B5;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+    }
+
+        /* Button Hover Effect */
+        .btn-primary:hover {
+            background-color: #578FCA;
+            transform: scale(1.05);
+        }
+
+    /* Container Styling */
+    .container {
+        max-width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #578FCA;
+        color: white;
+        margin-top: 30px;
+        border-radius: 5px;
+    }
+
+</style>

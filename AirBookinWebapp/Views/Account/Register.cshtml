@@ -1,0 +1,158 @@
+﻿@model Models.User
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container">
+    <div class="register-box">
+        <h1>Register</h1>
+
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+        {
+            @* Name *@
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name)
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Enter your name" })
+                @Html.ValidationMessageFor(m => m.Name)
+            </div>
+
+            @* Email *@
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email)
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Enter your email" })
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+
+            @* Birthdate *@
+            <div class="form-group">
+                @Html.LabelFor(m => m.BirthDate)
+                @Html.TextBoxFor(m => m.BirthDate, new { @class = "form-control", @type = "date" })
+            </div>
+
+            @* Address *@
+            <div class="form-group">
+                @Html.Label("City")
+                @Html.TextBoxFor(m => m.City, new { @class = "form-control", placeholder = "Enter your city" })
+                @Html.ValidationMessageFor(m => m.City)
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Region")
+                @Html.TextBoxFor(m => m.Region, new { @class = "form-control", placeholder = "Enter your region" })
+                @Html.ValidationMessageFor(m => m.Region)
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Postal Code")
+                @Html.TextBoxFor(m => m.PostalCode, new { @class = "form-control", placeholder = "Enter your postal code" })
+                @Html.ValidationMessageFor(m => m.PostalCode)
+            </div>
+
+            @* Password *@
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Enter your password" })
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+
+            @* Submit Button *@
+            <div class="form-group">
+                <button type="submit" class="btn">Sign Up</button>
+            </div>
+
+            <div class="login-link">
+                Already have an account? <a href="@Url.Action("Login", "Account")">Login</a>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(to bottom, #9ACBD0, #F2EFE7);
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Change from 100vh to auto */
+        margin-top: 80px; /* Adjust this value as needed */
+        padding-bottom: 50px; /* Prevents content from touching the bottom */
+    }
+
+    .register-box {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    h1 {
+        color: #2973B2;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    label {
+        font-weight: bold;
+        color: #2973B2;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #48A6A7;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #2973B2;
+            box-shadow: 0 0 5px rgba(41, 115, 178, 0.5);
+        }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        background: linear-gradient(to right, #2973B2, #48A6A7);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s ease;
+    }
+
+        .btn:hover {
+            background: linear-gradient(to right, #48A6A7, #2973B2);
+        }
+
+    .login-link {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+        .login-link a {
+            color: #2973B2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .login-link a:hover {
+                text-decoration: underline;
+            }
+</style>

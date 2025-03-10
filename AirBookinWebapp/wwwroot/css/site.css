@@ -1,0 +1,83 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #ffffff !important;
+}
+
+.container {
+    width: 100% !important; /* Full width */
+    max-width: 100% !important; /* Ensure it doesn't shrink */
+    margin: 0 !important; /* Remove margins */
+    padding: 0 20px; /* Optional: Add small padding for spacing */
+}
+
+
+.search-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px; /* Smooth rounded edges */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    /* max-width: 900px; */
+    margin: auto;
+    margin-top: 30px;
+    border-left: 5px solid #007bff; /* Blue accent line */
+}
+
+h4 {
+    text-align: left;
+    color: #007bff; /* Theme color */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.search-container .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.search-container input {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.search-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-search {
+    width: 15%;
+    background: #007bff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    left: 500px;
+}
+
+.btn-search:hover {
+    background: #0056b3;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+}

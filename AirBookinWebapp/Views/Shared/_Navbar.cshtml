@@ -1,0 +1,115 @@
+﻿@{
+    ViewData["Title"] = "_Navbar";
+}
+
+<style>
+    /* Gradient Navbar */
+    /* Improved Gradient Navbar */
+    /* Increased Height for Navbar */
+    .navbar-custom {
+        background: linear-gradient(90deg, #2973B2, #48A6A7);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        padding: 20px 20px; /* Increased padding for more height */
+        min-height: 80px; /* Ensures a taller navbar */
+        display: flex;
+        align-items: center; /* Centers content vertically */
+    }
+
+
+    /* Navbar brand styling */
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #F2FEF7 !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* Navbar links */
+    .navbar-custom .nav-link {
+        color: #F2FEF7 !important;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 8px 15px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 8px;
+    }
+
+        /* Hover effect */
+        .navbar-custom .nav-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: #F2FEF7 !important;
+        }
+
+    /* Authentication buttons */
+    .navbar-custom .btn-auth {
+        background-color: #F2FEF7;
+        color: #2973B2;
+        border: none;
+        padding: 8px 15px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .navbar-custom .btn-auth:hover {
+            background-color: #2973B2;
+            color: #F2FEF7;
+            transform: translateY(-2px);
+        }
+
+
+    /* Mobile-friendly navigation */
+    .navbar-toggler {
+        border: none;
+    }
+
+        .navbar-toggler:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;base64,..."); /* Custom icon */
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Air Booking</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                @* Additional links can be uncommented *@
+                @* <li class="nav-item">
+                       <a class="nav-link" asp-area="" asp-controller="Booking" asp-action="SearchFlights">Search Flights</a>
+                   </li> *@
+            </ul>
+            <ul class="navbar-nav">
+                @if (Context.Request.Cookies["AuthToken"] != null)
+                {
+                    <li class="nav-item">
+                        <a class="btn-auth" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="btn-auth" asp-area="" asp-route-returnUrl="@Context.Request.Path" asp-controller="Account" asp-action="Login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn-auth ms-2" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</nav>
