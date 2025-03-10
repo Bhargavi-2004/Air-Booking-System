@@ -3,8 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2508A247-1044-410B-BBE6-D6F30F6AE167}|API\\API.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2508A247-1044-410B-BBE6-D6F30F6AE167}|API\\API.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/AirBookingApp/True/SqlTable/dbo.Seat_Avail.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\controllers\\guestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +82,6 @@
       "RelativeMoniker": "D:0:0:{3D5B1634-AC62-43B4-AD12-371968259C05}|Repository\\Repository.csproj|solutionrelative:repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\views\\shared\\_flightsearch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\views\\shared\\_flightsearch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -89,10 +100,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CA32530-3229-414D-AE2F-3439E9342B78}|DTO\\DTO.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\dto\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -139,19 +146,8 @@
       "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|c:\\users\\bhargavi.jethva\\source\\repos\\airbookinwebapp\\airbookinwebapp\\views\\booking\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B023F87C-0455-473C-B44C-A5B4743EEBD8}|AirBookinWebapp\\AirBookingApplication.csproj|solutionrelative:airbookinwebapp\\views\\booking\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/AirBookingApp/True/SqlTable/dbo.Seat_Avail.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/AirBookingApp/True/SqlTable/dbo.Bookings.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -196,11 +192,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 46,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Program.cs",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Program.cs",
@@ -213,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Home\\Index.cshtml",
@@ -226,33 +222,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Controllers\\HomeController.cs",
               "RelativeToolTip": "AirBookinWebapp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBMAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T08:55:42.729Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Controllers\\AccountController.cs",
               "RelativeToolTip": "AirBookinWebapp\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAwwD0AAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwD0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T09:15:10.25Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "IAccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\Repository\\Interfaces\\IAccountRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Interfaces\\IAccountRepository.cs",
@@ -265,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\Repository\\AccountRepository.cs",
               "RelativeDocumentMoniker": "Repository\\AccountRepository.cs",
@@ -278,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "AccountApiController.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\API\\Controllers\\Api\\AccountApiController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Api\\AccountApiController.cs",
@@ -291,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "FlightController.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Controllers\\FlightController.cs",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Controllers\\FlightController.cs",
@@ -304,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "IFlightRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\Repository\\Interfaces\\IFlightRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Interfaces\\IFlightRepository.cs",
@@ -317,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "FlightRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\Repository\\FlightRepository.cs",
               "RelativeDocumentMoniker": "Repository\\FlightRepository.cs",
@@ -330,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "FlightApiController.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\API\\Controllers\\FlightApi\\FlightApiController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\FlightApi\\FlightApiController.cs",
@@ -343,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "SearchFlight.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Flight\\SearchFlight.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Flight\\SearchFlight.cshtml",
@@ -356,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "FlightDTO.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\DTO\\FlightDTO.cs",
               "RelativeDocumentMoniker": "DTO\\FlightDTO.cs",
@@ -369,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\DTO\\LoginDTO.cs",
               "RelativeDocumentMoniker": "DTO\\LoginDTO.cs",
@@ -382,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Flight\\Index.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Flight\\Index.cshtml",
@@ -395,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "LoginReponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\DTO\\LoginReponseDTO.cs",
               "RelativeDocumentMoniker": "DTO\\LoginReponseDTO.cs",
@@ -408,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -421,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "_Navbar.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Shared\\_Navbar.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Shared\\_Navbar.cshtml",
@@ -434,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Logout.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Account\\Logout.cshtml",
@@ -447,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Account\\Login.cshtml",
@@ -460,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "_FlightSearch.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Shared\\_FlightSearch.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Shared\\_FlightSearch.cshtml",
@@ -473,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "AirBookinWebapp\\wwwroot\\css\\site.css",
@@ -486,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Account\\Index.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Account\\Index.cshtml",
@@ -499,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Flights.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\Models\\Flights.cs",
               "RelativeDocumentMoniker": "Models\\Flights.cs",
@@ -512,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Shared\\_Layout.cshtml",
@@ -525,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Flight\\Details.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Flight\\Details.cshtml",
@@ -538,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "BookingController.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Controllers\\BookingController.cs",
@@ -551,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "GuestController.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Controllers\\GuestController.cs",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Controllers\\GuestController.cs",
@@ -560,12 +558,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T14:51:36.796Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "GuestDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Booking\\GuestDetails.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Booking\\GuestDetails.cshtml",
@@ -578,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "GuestDetailsDTO.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\DTO\\GuestDetailsDTO.cs",
               "RelativeDocumentMoniker": "DTO\\GuestDetailsDTO.cs",
@@ -591,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -617,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "SubmitGuestDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Guest\\SubmitGuestDetails.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Guest\\SubmitGuestDetails.cshtml",
@@ -630,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "BookingDTO.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\DTO\\BookingDTO.cs",
               "RelativeDocumentMoniker": "DTO\\BookingDTO.cs",
@@ -643,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "GuestApiController.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\API\\Controllers\\GuestApi\\GuestApiController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\GuestApi\\GuestApiController.cs",
@@ -656,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "IGuestRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\Repository\\Interfaces\\IGuestRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Interfaces\\IGuestRepository.cs",
@@ -669,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "BookingRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\Repository\\BookingRepository.cs",
               "RelativeDocumentMoniker": "Repository\\BookingRepository.cs",
@@ -682,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "IBookingRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\Repository\\Interfaces\\IBookingRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Interfaces\\IBookingRepository.cs",
@@ -695,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 3,
               "Title": "dbo.Seat_Avail.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/AirBookingApp/True/SqlTable/dbo.Seat_Avail.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/AirBookingApp/True/SqlTable/dbo.Seat_Avail.sql",
@@ -705,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "dbo.Bookings.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/AirBookingApp/True/SqlTable/dbo.Bookings.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/AirBookingApp/True/SqlTable/dbo.Bookings.sql",
@@ -715,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\appsettings.json",
               "RelativeDocumentMoniker": "AirBookinWebapp\\appsettings.json",
@@ -724,11 +721,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-03T08:20:20.506Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Account\\Register.cshtml",
@@ -741,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "BookingApiController.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\API\\Controllers\\BookingApi\\BookingApiController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\BookingApi\\BookingApiController.cs",
@@ -754,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "SubmitGuestDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Booking\\SubmitGuestDetails.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Booking\\SubmitGuestDetails.cshtml",
@@ -767,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "GuestRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\Repository\\GuestRepository.cs",
               "RelativeDocumentMoniker": "Repository\\GuestRepository.cs",
@@ -780,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "LoginGuest.cshtml",
               "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\AirBookinWebapp\\Views\\Guest\\LoginGuest.cshtml",
               "RelativeDocumentMoniker": "AirBookinWebapp\\Views\\Guest\\LoginGuest.cshtml",
@@ -790,19 +788,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-03T14:32:42.621Z",
               "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "API",
-              "DocumentMoniker": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\API\\API.csproj",
-              "RelativeDocumentMoniker": "API\\API.csproj",
-              "ToolTip": "C:\\Users\\bhargavi.jethva\\source\\repos\\AirBookinWebapp\\API\\API.csproj",
-              "RelativeToolTip": "API\\API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-10T06:43:23.826Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
